@@ -32,3 +32,6 @@
     background:radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
 
 }
+.game__bg{
+    background: var(--game-bg);
+}
