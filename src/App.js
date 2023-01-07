@@ -1,6 +1,6 @@
 import React from "react";
 import { Dashboard, GameFace, Rules } from "./components";
-import { Lose, Win } from "./containers";
+import { Lose, Win, RadialAction } from "./containers";
 import "./App.css";
 
 const App = () => {

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    /* My texts */
+    --title-text: 'Manrope', sans-serif;
+
+
+    /* My Colours */
+    --stroke-color: #4A64F1;
+    --game-bg: #182343;
+    --border-color: #546384;
+    --empty-house-circle: #060F27;
+    --score-color: #2763BD;
+
+    /* My Shadows */
+    --circle-shadow: inset -15px 10px 10px 2px rgba(0, 0, 0, 0.4);
+    --text-shadow: 0px 7px 4px #50596C;
+    --outside-circle-shadow: 0px 4.5px 2px #2A47E3;
+    --rule-shadow: 0px 4.5px 2px #63676F;
+
+    /*My Gradients*/
+    
+
+}
