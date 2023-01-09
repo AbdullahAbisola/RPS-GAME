@@ -1,37 +1,116 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
- body{
-    background: var(--game-bg);
- }
 
- a{
+body {
+    background: var(--game-bg);
+    width: 100%;
+}
+
+a {
     color: unset;
     /* The color unset property allows for an element to be reverted to it's original colour under the parent element */
     text-decoration: none;
 }
 
-.gradient__bg{
+.gradient__bg {
 
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
+    background: -moz-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
+    background: -webkit-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
+    background: -o-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
+    background: -ms-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
+    background: radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%);
 
 }
-.game__bg{
+
+.game__bg {
     background: var(--game-bg);
+}
+
+.title{
+  text-shadow: var(--text-shadow);
+}
+
+.section__margin {
+    margin: 2rem 3rem ;
+}
+
+.section__padding {
+    padding: 2rem 3rem 0rem;
+}
+
+/* Cool Animation for our Modal */
+.scale-in-right {
+	-webkit-animation: scale-in-right 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+	        animation: scale-in-right 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes scale-in-right {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-right {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+  }
+  
+
+/* Media Styles */
+
+@media screen and (max-width: 700px) {
+    .section__padding{
+        padding: 2rem;
+    }
+    .section__margin{
+        
+    margin: 2rem;
+    }
+}
+
+/* Smaller sized devices
+*/
+@media screen and (max-width: 700px) {
+    .section__padding{
+        padding: 2rem 1rem;
+    }
+    .section__margin{
+        
+    margin: 2rem 1rem;
+    }
 }

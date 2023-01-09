@@ -1,0 +1,264 @@
+.rps__GameFace {
+    margin: 1rem auto;
+    width: 450px;
+    height: 450px;
+}
+
+/* // Home Page Game face //  */
+.rps__GameFace-Lines img {
+    margin-top: 3rem;
+    opacity: 30%;
+    width: 425px;
+    height: 241px;
+
+}
+
+.dummy-container {
+    position: relative;
+}
+
+.rps__GameFace_circle-container {
+    position: absolute;
+    top: 270px;
+    left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*General Button Div Style*/
+button div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+}
+
+/* Button 1 */
+
+button.circle1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    background: #E8E9E8;
+    border-radius: 100%;
+    border: 20px solid #4A64F1;
+    box-shadow: var(--circle-shadow);
+    filter: drop-shadow(var(--outside-blue-circle-shadow));
+    margin: 2rem 2rem 0 -2rem;
+    transition: all 0.7s ease-out;
+}
+
+button.circle1:hover {
+    transform: translateY(-15px);
+}
+
+.circle1 img {
+    width: 62.63px;
+    height: 62.63px;
+}
+
+/* Button 2 */
+
+button.circle2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 140px;
+    background: #E8E9E8;
+    border: 20px solid #DB324F;
+    border-radius: 100%;
+    box-shadow: var(--circle-shadow);
+    filter: drop-shadow(var(--outside-red-circle-shadow));
+    margin: 17rem 1rem 0rem 0;
+    transition: all 0.7s ease-out;
+}
+
+button.circle2:hover {
+    transform: translateY(-15px);
+}
+
+.circle2 img {
+    width: 52.63px;
+    height: 42.63px;
+}
+
+/* Button 2 */
+
+button.circle3 {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    left: 315px;
+    background: #E8E9E8;
+    border: 20px solid #EEA413;
+    border-radius: 100%;
+    box-shadow: var(--circle-shadow);
+    filter: drop-shadow(var(--outside-yellow-circle-shadow));
+    transition: all 0.7s ease-out;
+}
+
+button.circle3:hover {
+    transform: translateY(-15px);
+}
+
+.circle3 img {
+    width: 68px;
+    height: 71px;
+}
+
+/* Media Styles */
+
+@media screen and (min-width:450px) and (max-width: 550px) {
+    .rps__GameFace-Lines {
+        margin: 0 40px;
+    }
+
+    .rps__GameFace-Lines img {
+        width: 385px;
+        height: 201px;
+
+    }
+
+    button div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle1 img {
+        width: 42.63px;
+        height: 42.63px;
+    }
+
+    .circle2 img {
+        width: 32.63px;
+        height: 22.63px;
+    }
+
+    .circle3 img {
+        width: 48px;
+        height: 51px;
+    }
+
+    button.circle1 {
+        border: 12px solid #4A64F1;
+        top: -5px;
+        left: 80px;
+    }
+
+    button.circle2 {
+        border: 12px solid #DB324F;
+        left: 185px;
+        top: -70px;
+    }
+
+    button.circle3 {
+        border: 12px solid #EEA413;
+        left: 325px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .rps__GameFace-Lines {
+        margin: 0 20px;
+    }
+
+    .rps__GameFace-Lines img {
+        width: 385px;
+        height: 201px;
+
+    }
+
+    button div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle1 img {
+        width: 42.63px;
+        height: 42.63px;
+    }
+
+    .circle2 img {
+        width: 32.63px;
+        height: 22.63px;
+    }
+
+    .circle3 img {
+        width: 48px;
+        height: 51px;
+    }
+
+    button.circle1 {
+        border: 12px solid #4A64F1;
+        top: -5px;
+        left: 60px;
+    }
+
+    button.circle2 {
+        border: 12px solid #DB324F;
+        left: 165px;
+        top: -70px;
+    }
+
+    button.circle3 {
+        border: 12px solid #EEA413;
+        left: 300px;
+    }
+}
+
+/* //End of Home Page Gameface //  */
+
+/* // Selection Phase // */
+
+.rps__selection1 {
+    position: absolute;
+    top: calc(50% - 136.5px);
+    left: calc(50% - 292.5px);
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 585px;
+    height: 273px;
+
+    padding: 1rem 2rem;
+}
+
+.rps__selection1_house,
+.rps__selection1_you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rps__selection1_house p,
+.rps__selection1_you p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-bottom: 3rem;
+}
+
+.rps__selection1_you div {
+    display: none;
+}
+
+.rps__selection1_house div {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: #060F27;
+}

@@ -1,0 +1,89 @@
+.rps__dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid var(--border-color);
+    border-radius: 20px;
+    width: 100%;
+    min-width: 450px;
+    margin-bottom: 5rem;
+}
+
+.rps__dashboard-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem 2rem;
+}
+
+.rps__dashboard-content h1 {
+    font-size: 40px;
+    line-height: 42px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.rps__dashboard-scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 15px;
+    padding: 1.5rem 3rem;
+    margin: 1rem 2rem;
+
+}
+
+.rps__dashboard-scoreboard h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2763BD;
+}
+
+.rps__dashboard-scoreboard p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.85);
+
+    margin: 1rem 0;
+}
+
+/* Media Styles */
+
+@media screen and (max-width: 750px){
+    .rps__dashboard-content h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .rps__dashboard-content h1{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .rps__dashboard-scoreboard{
+      padding: 1.5rem;
+    }
+    .rps__dashboard-scoreboard p{
+        font-size: 32px;
+        line-height: 24px;
+    }
+}
