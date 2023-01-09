@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App section__padding dummy-container">
-      <div>
+      <div className="z">
         <Dashboard />
         <GameFace />
         <Rules />

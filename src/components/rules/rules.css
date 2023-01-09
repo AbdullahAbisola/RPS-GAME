@@ -45,7 +45,7 @@ These include all the styles for the modal */
     height: 480px;
     background: #fff;
     border-radius: 25px;
-    z-index: 10;
+    z-index: 1;
 }
 
 .rps__rules-screen__title {
@@ -75,14 +75,13 @@ These include all the styles for the modal */
     justify-content: center;
     align-items: center;
 }
+.z{
+    z-index: -2;
+}
+
 #my-backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:-moz-radial-gradient(circle at 51% 27%, rgba(32, 47, 91, 1) 13%, rgba(0, 22, 89, 1) 60%, rgba(36, 68, 160, 1) 100%) ;
-    z-index: -1;
+    z-index: 0;
+    mix-blend-mode: multiply; 
     display: none;
   }
 
@@ -100,5 +99,32 @@ These include all the styles for the modal */
     .rps__rules p {
         font-size: 14px;
         line-height: 24px;
+    }
+    .rps__rules-screen{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       justify-content: flex-start;
+       align-items: space-between;
+       border-radius: 0px;
+
+    }
+    .rps__rules-screen__title{
+        margin: 12rem 2rem 5rem 2rem;
+    }
+    .rps__rules-screen__title h1{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .rps__rules-screen__display img{
+         width: 300px;
+         height: 200px;
+    }
+
+    #my-backdrop {
+        width: 100%;
+        height: 100%;
     }
 }

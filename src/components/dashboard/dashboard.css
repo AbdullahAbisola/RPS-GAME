@@ -18,6 +18,40 @@
     margin: 1rem 2rem;
 }
 
+.rps__dashboard-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 520px;
+}
+
+.rps__dashboard-welcome h1 {
+    font-family: var(--font-family);
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4A64F1;
+}
+
+.rps__dashboard-welcome p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFF;
+
+    margin-left: 2.2rem;
+}
+
 .rps__dashboard-content h1 {
     font-size: 40px;
     line-height: 42px;
@@ -67,22 +101,24 @@
 
 /* Media Styles */
 
-@media screen and (max-width: 750px){
-    .rps__dashboard-content h1{
+@media screen and (max-width: 750px) {
+    .rps__dashboard-content h1 {
         font-size: 32px;
         line-height: 40px;
     }
 }
 
-@media screen and (max-width: 575px){
-    .rps__dashboard-content h1{
+@media screen and (max-width: 575px) {
+    .rps__dashboard-content h1 {
         font-size: 24px;
         line-height: 24px;
     }
-    .rps__dashboard-scoreboard{
-      padding: 1.5rem;
+
+    .rps__dashboard-scoreboard {
+        padding: 1.5rem;
     }
-    .rps__dashboard-scoreboard p{
+
+    .rps__dashboard-scoreboard p {
         font-size: 32px;
         line-height: 24px;
     }
