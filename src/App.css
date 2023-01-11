@@ -7,7 +7,6 @@
 
 body {
     background: var(--game-bg);
-    width: 100%;
 }
 
 a {
@@ -43,6 +42,10 @@ a {
   text-shadow: var(--text-shadow);
 }
 
+.dummy-container {
+  position: relative;
+}
+
 .full-screen {
   position: fixed;
   top: 0;
@@ -50,6 +53,13 @@ a {
   width: 100%;
   height: 100%;
 }
+  .center {
+    position: absolute; /* Position the element absolutely */
+    top: 50%; /* Center the element vertically */
+    left: 50%; /* Center the element horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position of the element */
+  }
+
 
 .section__margin {
     margin: 2rem 3rem ;

@@ -1,33 +1,35 @@
-.rps__GameFace {
-    margin: 1rem auto;
-    width: 450px;
-    height: 450px;
+
+.rps__GameFace{
+  margin: 2rem auto 5rem auto;
 }
 
 /* // Home Page Game face //  */
-.rps__GameFace-Lines img {
-    margin-top: 3rem;
-    opacity: 30%;
-    width: 425px;
-    height: 241px;
-
-}
-
-.dummy-container {
-    position: relative;
-}
 
 .rps__GameFace_circle-container {
-    position: absolute;
-    top: 270px;
-    left: auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
 }
-
+.circle-btn{
+    margin: 25px;
+}
+.rps__GameFace_circle-container:before{
+    background-image: url('../../assets/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+}
 /*General Button Div Style*/
 button div {
     display: flex;
@@ -40,16 +42,12 @@ button div {
 /* Button 1 */
 
 button.circle1 {
-    position: absolute;
     cursor: pointer;
-    top: 0px;
-    left: 0;
     background: #E8E9E8;
     border-radius: 100%;
     border: 20px solid #4A64F1;
     box-shadow: var(--circle-shadow);
     filter: drop-shadow(var(--outside-blue-circle-shadow));
-    margin: 2rem 2rem 0 -2rem;
     transition: all 0.7s ease-out;
 }
 
@@ -65,16 +63,12 @@ button.circle1:hover {
 /* Button 2 */
 
 button.circle2 {
-    position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 140px;
     background: #E8E9E8;
     border: 20px solid #DB324F;
     border-radius: 100%;
     box-shadow: var(--circle-shadow);
     filter: drop-shadow(var(--outside-red-circle-shadow));
-    margin: 17rem 1rem 0rem 0;
     transition: all 0.7s ease-out;
 }
 
@@ -90,10 +84,7 @@ button.circle2:hover {
 /* Button 2 */
 
 button.circle3 {
-    position: absolute;
     cursor: pointer;
-    top: 30px;
-    left: 315px;
     background: #E8E9E8;
     border: 20px solid #EEA413;
     border-radius: 100%;
@@ -113,102 +104,6 @@ button.circle3:hover {
 
 /* Media Styles */
 
-@media screen and (min-width:450px) and (max-width: 550px) {
-    .rps__GameFace-Lines {
-        margin: 0 40px;
-    }
-
-    .rps__GameFace-Lines img {
-        width: 385px;
-        height: 201px;
-
-    }
-
-    button div {
-        width: 80px;
-        height: 80px;
-    }
-
-    .circle1 img {
-        width: 42.63px;
-        height: 42.63px;
-    }
-
-    .circle2 img {
-        width: 32.63px;
-        height: 22.63px;
-    }
-
-    .circle3 img {
-        width: 48px;
-        height: 51px;
-    }
-
-    button.circle1 {
-        border: 12px solid #4A64F1;
-        left: 80px;
-    }
-
-    button.circle2 {
-        border: 12px solid #DB324F;
-        left: 185px;
-        top: -70px;
-    }
-
-    button.circle3 {
-        border: 12px solid #EEA413;
-        left: 325px;
-    }
-}
-
-@media screen and (max-width:450px) {
-    .rps__GameFace-Lines {
-        margin: 0 20px;
-    }
-
-    .rps__GameFace-Lines img {
-        width: 385px;
-        height: 201px;
-
-    }
-
-    button div {
-        width: 80px;
-        height: 80px;
-    }
-
-    .circle1 img {
-        width: 42.63px;
-        height: 42.63px;
-    }
-
-    .circle2 img {
-        width: 32.63px;
-        height: 22.63px;
-    }
-
-    .circle3 img {
-        width: 48px;
-        height: 51px;
-    }
-
-    button.circle1 {
-        border: 12px solid #4A64F1;
-        top: -5px;
-        left: 60px;
-    }
-
-    button.circle2 {
-        border: 12px solid #DB324F;
-        left: 165px;
-        top: -70px;
-    }
-
-    button.circle3 {
-        border: 12px solid #EEA413;
-        left: 300px;
-    }
-}
 
 /* //End of Home Page Gameface //  */
 
@@ -216,13 +111,11 @@ button.circle3:hover {
 
 .rps__selection {
     display: flex;
-    position: absolute;
-    top: calc(50% - 136.5px);
-    left: calc(50% - 292.5px);
+    margin: 2rem auto;
 
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     width: 585px;
     height: 273px;
@@ -234,7 +127,7 @@ button.circle3:hover {
 .rps__selection1_you {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -268,9 +161,6 @@ div#house-el, div#you-el{
 
 
 #you-el div, #house-el div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 110px;
     height: 110px;
 }
@@ -307,61 +197,3 @@ button.choice3 {
 }
 
 /* //Media Styles for Selection Page // */
-
-@media screen and (max-width: 600px) {
-    .rps__selection {
-
-        position: relative;
-        width: 100%;
-        transform: translateX(-50%);
-        left: 50%;
-    }
-
-    .rps__selection1_house p,
-    .rps__selection1_you p {
-        font-size: 14px;
-        line-height: 36px;
-    }
-
-    .rps__selection1_house div {
-        width: 110px;
-        height: 110px;
-    }
-
-    #you-el div {
-        width: 90px;
-        height: 90px;
-    }
-
-    #house-el div {
-        width: 90px;
-        height: 90px;
-    }
-
-    button.choice1 {
-        border: 12px solid #4A64F1;
-    }
-
-    button.choice2 {
-        border: 12px solid #DB324F;
-    }
-
-    button.choice3 {
-        border: 12px solid #EEA413;
-    }
-
-    .choice1 img {
-        width: 42.63px;
-        height: 42.63px;
-    }
-
-    .choice2 img {
-        width: 32.63px;
-        height: 22.63px;
-    }
-
-    .choice3 img {
-        width: 48px;
-        height: 51px;
-    }
-}
